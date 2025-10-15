@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Automatic — KPJ Generator</title>
+  <meta name="theme-color" content="#0b0b0f">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <h1>Automatic</h1>
+  <p class="subtitle">KPJ Dummy Generator & Validator (Luhn)</p>
+</header>
+
+<main>
+  <section class="card">
+    <h2>Generator</h2>
+    <div class="grid">
+      <label>Prefix (4 digit)
+        <input id="prefix" maxlength="4" placeholder="0900" value="0900">
+      </label>
+      <label>Jumlah
+        <input id="count" type="number" min="1" max="5000" value="10">
+      </label>
+    </div>
+    <div class="row">
+      <button id="btnGenerate">Generate</button>
+      <button id="btnDownloadCsv">Unduh CSV</button>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Validator</h2>
+    <label>Nomor KPJ (11 digit)
+      <input id="kpj" maxlength="11" placeholder="09006104187">
+    </label>
+    <button id="btnValidate">Validate Luhn</button>
+  </section>
+
+  <section class="card">
+    <h2>Output</h2>
+    <pre id="out">Klik Generate untuk mulai.</pre>
+  </section>
+</main>
+
+<footer><small>© 2025 Automatic — Works offline</small></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
