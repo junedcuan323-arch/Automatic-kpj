@@ -1,0 +1,20 @@
+body{
+  background:#0b0b0f;
+  color:#e9eef6;
+  font-family:Arial,sans-serif;
+  margin:0;
+  padding:0;
+}
+header{text-align:center;padding:20px;}
+.subtitle{color:#a8b3c7;}
+main{max-width:700px;margin:0 auto;padding:16px;}
+.card{background:#111318;padding:14px;margin:10px 0;border-radius:10px;}
+input,button{
+  padding:10px;
+  border-radius:8px;
+  border:none;
+  margin:6px 0;
+  width:100%;
+}
+button{background:#2a3e74;color:white;}
+pre{background:#0c0f16;padding:12px;border-radius:10px;overflow:auto;}
